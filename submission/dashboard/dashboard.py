@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 import sys
 from pathlib import Path
 
-dir = path.Path(__file__).resolve()
+dir = Path(__file__).resolve()
 sys.path.append(dir.parent.parent)
 
 path_to_day_df = './dashboard/day_data.csv'
