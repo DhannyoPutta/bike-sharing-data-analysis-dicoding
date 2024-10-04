@@ -4,13 +4,24 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+import sys
+import path
+
+dir = path.Path(__file__).abspath()
+sys.append.path(dir.parent.parent)
+
+path_to_day_df = './dashboard/day_data.csv'
+path_to_hour_df = './dashboard/hour_data.csv'
+
+with open(path_to_day_df, 'rb') as file:
+    day_df = pd.read_csv(file)
+
+with open(path_to_hour_df, 'rb') as file:
+    hour_df = pd.read_csv(file)
 
 sns.set(style='dark')
 
 st.title("Bike Sharing Dashboard :bike:")
-
-day_df = pd.read_csv('bike-sharing-data-analysis-dicoding/submission/dashboard/day_data.csv')
-hour_df = pd.read_csv('bike-sharing-data-analysis-dicoding/submission/dashboard/hour_data.csv')
 
 st.subheader('Customer Demographic')
 
