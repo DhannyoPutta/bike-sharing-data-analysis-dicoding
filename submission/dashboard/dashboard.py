@@ -5,9 +5,9 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 import sys
-import path
+from pathlib import Path
 
-dir = path.Path('dashboard.py').abspath()
+dir = path.Path(__file__).resolve()
 sys.path.append(dir.parent.parent)
 
 path_to_day_df = './dashboard/day_data.csv'
