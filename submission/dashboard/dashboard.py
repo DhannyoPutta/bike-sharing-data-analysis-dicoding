@@ -9,8 +9,8 @@ sns.set(style='dark')
 
 st.title("Bike Sharing Dashboard :bike:")
 
-day_df = pd.read_csv('day_data.csv')
-hour_df = pd.read_csv('hour_data.csv')
+day_df = pd.read_csv('../dashboard/day_data.csv')
+hour_df = pd.read_csv('../dashboard/hour_data.csv')
 
 st.subheader('Customer Demographic')
 
