@@ -10,8 +10,8 @@ from pathlib import Path
 dir = Path(__file__).resolve()
 sys.path.append(dir.parent.parent)
 
-path_to_day_df = './dashboard/day_data.csv'
-path_to_hour_df = './dashboard/hour_data.csv'
+path_to_day_df = '/day_data.csv'
+path_to_hour_df = '/hour_data.csv'
 
 with open(path_to_day_df, 'rb') as file:
     day_df = pd.read_csv(file)
