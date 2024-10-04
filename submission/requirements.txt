@@ -1,8 +1,5 @@
-Daftar library yang digunakan dalam proses analisis:
-- NumPy
-- Pandas
-- Matplotlib.pyplot
-- Seaborn
-
-Library yang digunakan dalam pembuatan dashboard:
-- Streamlit
+numpy
+pandas
+matplotlib
+seaborn
+streamlit
