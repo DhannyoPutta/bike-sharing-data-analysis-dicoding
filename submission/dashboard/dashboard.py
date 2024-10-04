@@ -5,8 +5,8 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 
-day_df = pd.read_csv('submission/dashboard/day_data.csv')
-hour_df = pd.read_csv('submission/dashboard/hour_data.csv')
+day_df = pd.read_csv('./submission/dashboard/day_data.csv')
+hour_df = pd.read_csv('./submission/dashboard/hour_data.csv')
 
 sns.set(style='dark')
 
