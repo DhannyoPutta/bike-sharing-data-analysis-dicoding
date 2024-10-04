@@ -8,7 +8,7 @@ import sys
 import path
 
 dir = path.Path(__file__).abspath()
-sys.append.path(dir.parent.parent)
+sys.path.append(dir.parent.parent)
 
 path_to_day_df = './dashboard/day_data.csv'
 path_to_hour_df = './dashboard/hour_data.csv'
